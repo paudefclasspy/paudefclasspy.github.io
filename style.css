@@ -1,0 +1,106 @@
+/* Estilo general */
+body {
+	background-color: skyblue;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+  }
+  
+  h1 {
+	font-size: 3em;
+	color: white;
+	text-shadow: 2px 2px #000;
+	margin-top: 0;
+  }
+  
+  button {
+	background-color: #f00;
+	color: #fff;
+	border: none;
+	padding: 0.5em 1em;
+	margin-left: 1em;
+	cursor: pointer;
+  }
+  
+  /* Estilo para la lista de deseos */
+  #lista-deseos {
+	font-size: 1.5em;
+  }
+  
+  /* Estilos para los gatos */
+  .gato {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+  }
+  
+  .gato img {
+	max-width: 100%;
+	height: auto;
+  }
+  
+  /* Estilos para los corazones */
+  .corazon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+  }
+  
+  .corazon img {
+	max-width: 100%;
+	height: auto;
+  }
+  
+  /* Estilo para la sección principal */
+  #contenido {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2em;
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+	/* Estilo para la lista de deseos */
+	#lista-deseos {
+	  font-size: 1em;
+	}
+  
+	/* Estilo para la sección principal */
+	#contenido {
+	  padding: 1em;
+	}
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 960px) {
+  
+	/* Estilo para la lista de deseos */
+	#lista-deseos {
+	  font-size: 1.2em;
+	}
+  
+	/* Estilo para la sección principal */
+	#contenido {
+	  padding: 2em;
+	}
+  }
+  
+  @media screen and (min-width: 961px) {
+  
+	/* Estilo para la lista de deseos */
+	#lista-deseos {
+	  font-size: 1.5em;
+	}
+  
+	/* Estilo para la sección principal */
+	#contenido {
+	  padding: 3em;
+	}
+  }
+  
