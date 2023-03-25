@@ -1,11 +1,11 @@
 const form = document.querySelector('form');
 const listaDeseos = document.querySelector('#lista-deseos');
 
-let deseos = JSON.parse(localStorage.getItem('deseos')) || [];
+let deseos = JSON.parse(sessionStorage.getItem('deseos')) || [];
 
 // Función para guardar los deseos en el almacenamiento local
 function guardarDeseos() {
-  localStorage.setItem('deseos', JSON.stringify(deseos));
+  sessionStorage.setItem('deseos', JSON.stringify(deseos));
 }
 
 // Función para eliminar elemento de la lista de deseos
